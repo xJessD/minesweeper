@@ -5,10 +5,10 @@
 ## Preview
 
 ### Game Play - Incorrect Coordinates
-![Screenshot](/assets/Screenshot_156.png?raw=true "Site Preview")
+![Screenshot](/src/assets/Screenshot_156.png?raw=true "Site Preview")
 
 ### Game Play - Game Over
-![Screenshot](/assets/Screenshot_155.png?raw=true "Site Preview")
+![Screenshot](/src/assets/Screenshot_155.png?raw=true "Site Preview")
 
 
 ## MVP
