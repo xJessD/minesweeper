@@ -30,12 +30,14 @@ public class Game {
 	}
 	
 	public void render() {
+		System.out.println("\n");
 		
 		// Displays all the cells + formatting
 		for (int i = 0; i <= rows+2; i++) {
 			if (i < rows) {
 				System.out.println();
 				
+				System.out.print(" ");
 				for (int j = 0; j < cols; j++) {
 					System.out.print("  " + field[i][j].getValue());
 				}
@@ -75,7 +77,7 @@ public class Game {
 		 
 		
 		// While the mines have not been assigned
-		// Doesn't really matter if we try to place a mine already on another mine
+		// Doesn't really matter if we try to place a mine already on another mine (actually matters in this case, was bugging out neighbor count should we double add mine to a single position)
 		while (mines > 0) {
 			
 			// random x, y co-ords from 0 - rows / cols
@@ -194,6 +196,8 @@ public class Game {
 	// To display all empty neighbors from current coordinate until we find a mine or first cell with
 	// more than 0 neighbors
 	public void displayEmptyNeighbors(int x, int y) {
+		
+		// looking at all NSEW directions
   		boolean foundS = false;
 		boolean foundW = false;
 		boolean foundE = false;

@@ -40,7 +40,7 @@ public class Minesweeper {
 			// Scanner for user input
 			Scanner scanner = new Scanner(System.in); 
 			System.out.println("\n\n");
-			System.out.println("Please enter coordinates to check");
+			System.out.println("  Please enter coordinates to check");
 			
 			boolean correctInput = false;
 			int x = 0;
@@ -55,12 +55,12 @@ public class Minesweeper {
 						correctInput = true;
 					
 					else {
-						System.out.println("Coordinates are not in range. Try again");
+						System.out.println("  Coordinates are not in range. Try again");
 					}
 				}
 				catch (Exception e) {
 					scanner.next();
-					System.out.println("Please enter the correct coordinates");
+					System.out.println("  Please enter the correct coordinates");
 				}
 			}
 
@@ -73,7 +73,7 @@ public class Minesweeper {
 				game.render();
 				
 				System.out.println();
-				System.out.println("You've won!");
+				System.out.println("  You've won!");
 				replay(scanner);
 				
 			}
@@ -82,7 +82,7 @@ public class Minesweeper {
 				game.render();
 				
 				System.out.println();
-				System.out.println("Game Over!");
+				System.out.println("  Boom! Game Over!");
 				replay(scanner);
 								
 			}
@@ -92,7 +92,7 @@ public class Minesweeper {
 	public static void replay(Scanner scanner) {
 		
 		System.out.println();
-		System.out.println("Would you like to play again? y / n");
+		System.out.println("  Would you like to play again? y / n");
 		
 		if (scanner.hasNext("y")){
 			reset(rows, cols);
@@ -101,7 +101,7 @@ public class Minesweeper {
 		else if (scanner.hasNext("n")) {
 			
 			System.out.println();
-			System.out.println("Sure, see you next time.");
+			System.out.println("  Sure, see you next time.");
 		}
 		
 	}
@@ -109,7 +109,7 @@ public class Minesweeper {
 	
 	public static void reset(int rows, int cols) {
 		System.out.println();
-		System.out.println("Lets play again!");
+		System.out.println("  Lets play again!");
 		game = new Game(rows, cols);
 	}
 }

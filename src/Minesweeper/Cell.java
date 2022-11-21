@@ -14,6 +14,7 @@ public class Cell {
 	public Cell() {}
 	
 	public String getValue() {
+		
 		// if !isChecked == ?
 		// if isChecked && isMine = lose / game over
 		// if isChecked && !isMine -> display surrounding cells = !isMine
@@ -55,24 +56,8 @@ public class Cell {
 //			if (isChecked && !isMine) {
 //				return "   ";
 //			}
-//			
-//			else if (this.isMine) {
-////				return " m ";
-//				return " x ";
-//			}
-//			else if (isChecked && isMine) {
-//				return " m ";
-//			}
-//			
-//			
-//			else if (isChecked && countOfNeighborMines == 0) {
-////				return "   " ;
-//				return " x ";
-//			}
 			
-			//return String.format(" %s ", countOfNeighborMines);
-			
-			return " y ";
+			return " y "; // to test
 		
 	}
 	
